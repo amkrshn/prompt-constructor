@@ -1,0 +1,7 @@
+{
+  "name": "@prompt-constructor/core",
+  "version": "4.0.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/core.js"
+}

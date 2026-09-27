@@ -1,0 +1,10 @@
+{
+  "name": "@prompt-constructor/embed",
+  "version": "4.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./launcher": "./src/launcher.js",
+    "./adapter": "./src/host-adapter.js"
+  }
+}
