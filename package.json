@@ -1,0 +1,23 @@
+{
+  "name": "prompt-constructor",
+  "version": "4.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Framework-neutral prompt construction toolkit with standalone UI and React integration.",
+  "scripts": {
+    "build": "npm run build:standalone",
+    "build:standalone": "node scripts/build-standalone.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run check:syntax && npm run check:neutral && npm test && npm run build:standalone",
+    "check:syntax": "node scripts/check-syntax.mjs",
+    "check:neutral": "node scripts/check-neutral.mjs"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "examples/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}
